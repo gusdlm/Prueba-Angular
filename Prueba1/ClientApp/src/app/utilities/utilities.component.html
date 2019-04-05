@@ -1,0 +1,13 @@
+<h1>Servicios Públicos</h1>
+<div>
+<button (click)="show = !show" 
+class="btn btn-primary">Botón vacío</button>
+<p *ngIf="show" >Ese botón no hace nada :)</p></div>
+<hr>
+<div>
+<button type="button" class="btn btn-info" (click)="clickButton(1)">Luz</button>
+<button type="button" class="btn btn-info" (click)="clickButton(2)">Gas</button>
+<button type="button" class="btn btn-info" (click)="clickButton(3)">Agua</button>
+<button type="button" class="btn btn-info" (click)="clickButton(4)">Drenaje</button>
+</div>
+<br>{{sSelected}}
